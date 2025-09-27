@@ -1,0 +1,1 @@
+{"root":["./src/App.tsx","./src/main.tsx","./src/components/Layout.tsx","./src/features/accounting/AccountingSettings.tsx","./src/features/help/HelpSupport.tsx","./src/features/rate/RateUs.tsx","./src/features/terms/Terms.tsx","./src/lib/storage.ts"],"version":"5.9.2"}
