@@ -1,0 +1,24 @@
+:root { color-scheme: light dark; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica Neue, Arial, "Apple Color Emoji", "Segoe UI Emoji"; }
+.app-container { display: grid; grid-template-columns: 260px 1fr; min-height: 100vh; }
+.sidebar { padding: 20px; border-right: 1px solid #e5e7eb; }
+.brand { font-size: 1.25rem; margin: 0 0 1rem 0; }
+nav { display: flex; flex-direction: column; gap: 10px; }
+nav a { text-decoration: none; color: inherit; padding: 8px 10px; border-radius: 8px; }
+nav a.active { background: #eef2ff; color: #3730a3; }
+.content { padding: 24px; }
+.section { display: grid; gap: 16px; max-width: 900px; }
+.card { border: 1px solid #e5e7eb; border-radius: 12px; padding: 16px; }
+.row { display: grid; gap: 12px; }
+.row-2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+label { font-weight: 600; }
+input, select, textarea { width: 100%; padding: 10px; border: 1px solid #e5e7eb; border-radius: 8px; background: transparent; }
+.actions { display: flex; gap: 10px; }
+button { padding: 10px 14px; border: 1px solid #e5e7eb; background: #111827; color: white; border-radius: 8px; cursor: pointer; }
+button.secondary { background: white; color: #111827; }
+.muted { color: #6b7280; font-size: .9rem; }
+.badge { display: inline-block; padding: 2px 8px; border-radius: 9999px; background: #f3f4f6; font-size: .75rem; }
+
+@media (max-width: 920px) { .app-container { grid-template-columns: 1fr; } .sidebar { border-right: none; border-bottom: 1px solid #e5e7eb; } }
+
